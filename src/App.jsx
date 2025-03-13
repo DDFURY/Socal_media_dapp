@@ -7,11 +7,16 @@ import './App.css'
 function App() {
   return (
   <>
+   <div className="flex flex-col min-h-screen p-6">
   <StateContextProvider>
   <Toaster position="top-center" reverseOrder={false} />
   <Header/>
+  <main className="items-center text-center justify-between flex-1">
   <RouterProvider router={routes}></RouterProvider>
-  </StateContextProvider></>
+  </main>
+  </StateContextProvider>
+  </div>
+  </>
   )
 }
 

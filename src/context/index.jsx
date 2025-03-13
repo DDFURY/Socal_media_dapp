@@ -33,6 +33,7 @@ export const StateContextProvider = ({ children }) => {
       console.log(error);
     }
   };
+  
   const Contarct = async () => {
     try {
       if (!window.ethereum) {
